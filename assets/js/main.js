@@ -60,7 +60,7 @@ x = setInterval(function () {
     if (distance <= 0 || document.stopTimer === true) {
         clearInterval(x);
         document.querySelector(".notice").innerHTML = "Recibí los mejores momentos en tu email luego que termine:";
-        document.querySelector('#timerWrapper').outerHTML = '<h2>Debate Presidencial XL</h2>';
+        document.querySelector('#timerWrapper').outerHTML = '<h2>Debate Presidencial XL</h2><a class="btn px-3 btn-primary" href="https://www.youtube.com/watch?v=NDIPDxbahU8" role="button" style="background-color: #f26f21;border-color: #f26f21;"><img class="" src="https://www.gstatic.com/images/icons/material/product/2x/youtube_64dp.png" height="30" width="30"> Ver en YouTube</a>';
         document.querySelector('#calendar').remove();
         var leftColumn = document.querySelector('.backg');
         leftColumn.classList.remove('backg');
