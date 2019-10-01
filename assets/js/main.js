@@ -1,7 +1,7 @@
 var meses = [ "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
     "Agosto", "Septiembre", "Octubre", "Noviembre", "Septiembre" ];
 var dias = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado" ];
-var iframe = '<iframe class="embed-responsive-item"<iframe class="" src="https://www.youtube.com/embed/NDIPDxbahU8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+var iframe = '<iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FPDigitalUy%2Fvideos%2F746499669107543%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>';
 
 var second = 1000,
     minute = second * 60,
@@ -60,7 +60,7 @@ x = setInterval(function () {
     if (distance <= 0 || document.stopTimer === true) {
         clearInterval(x);
         document.querySelector(".notice").innerHTML = "Recibí los mejores momentos en tu email luego que termine:";
-        document.querySelector('#timerWrapper').outerHTML = '<h2>Debate Presidencial XL</h2><a class="btn px-3 btn-primary" href="https://www.youtube.com/watch?v=NDIPDxbahU8" role="button" style="background-color: #f26f21;border-color: #f26f21;"><img class="" src="https://www.gstatic.com/images/icons/material/product/2x/youtube_64dp.png" height="30" width="30"> Ver en YouTube</a>';
+        document.querySelector('#timerWrapper').outerHTML = '<h2>Debate Presidencial XL</h2><a class="btn px-3 btn-primary" href="https://www.facebook.com/PDigitalUY" role="button" style="background-color: #f26f21;border-color: #f26f21;">Ver en Facebook</a>';
         document.querySelector('#calendar').remove();
         var leftColumn = document.querySelector('.backg');
         leftColumn.classList.remove('backg');
