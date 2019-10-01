@@ -83,3 +83,8 @@ input {
     margin-left: 0px;
     margin-right: 0px;
 }
+
+.backg {
+    background: url(/assets/img/debate-presidencial.jpeg) center #25242c no-repeat; 
+    background-size: contain;
+}

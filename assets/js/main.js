@@ -1,6 +1,7 @@
 var meses = [ "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio",
     "Agosto", "Septiembre", "Octubre", "Noviembre", "Septiembre" ];
 var dias = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado" ];
+var iframe = '<iframe class="embed-responsive-item"<iframe class="" src="https://www.youtube.com/embed/NDIPDxbahU8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
 
 var second = 1000,
     minute = second * 60,
@@ -58,7 +59,14 @@ x = setInterval(function () {
 
     if (distance <= 0 || document.stopTimer === true) {
         clearInterval(x);
-        document.getElementById('timerWrapper').outerHTML = '<h1>¡Ya está sucediendo!</h1>';
+        document.querySelector(".notice").innerHTML = "Recibí los mejores momentos en tu email luego que termine:";
+        document.querySelector('#timerWrapper').outerHTML = '<h2>Debate Presidencial XL</h2>';
+        document.querySelector('#calendar').remove();
+        var leftColumn = document.querySelector('.backg');
+        leftColumn.classList.remove('backg');
+        leftColumn.innerHTML = '<div class="embed-responsive embed-responsive-16by9">' + iframe + '</div>';
+        var mobImg = document.querySelector(".mob-img");
+        mobImg.outerHTML = '<div class="embed-responsive embed-responsive-16by9 mb-3 d-block d-lg-none">' + iframe + '</div>';
     }
 }, second);
 
